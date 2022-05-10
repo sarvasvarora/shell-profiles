@@ -7,8 +7,9 @@ OH MY ZSH setup instructions (my preferred installation):
 - oh-my-zsh plugins:
   - git
 - custom plugins (check github for respective installation instructions):
-  - install zsh-autosuggestions plugin
-  - install zsh-syntax-highlighting plugin
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
+  - zsh-history-substring-search
 
 [OPTIONAL]
 - install thefuck utility and set alias
