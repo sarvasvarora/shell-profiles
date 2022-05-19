@@ -1,0 +1,141 @@
+{
+	"workbench.iconTheme": "material-icon-theme",
+	"files.autoSave": "afterDelay",
+	"editor.wordWrap": "on",
+	"prettier.tabWidth": 4,
+	"editor.formatOnSave": true,
+	"markdown.extension.toc.githubCompatibility": true,
+	"editor.suggestOnTriggerCharacters": true,
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": false,
+		"strings": false
+	},
+	"editor.smoothScrolling": true,
+	"smoothtype.duration": 1000,
+	"editor.fontSize": 14,
+	"prettier.printWidth": 120,
+	"python.formatting.provider": "autopep8",
+	"python.formatting.autopep8Path": "/usr/local/bin/autopep8",
+	"python.formatting.autopep8Args": ["--ignore", "E402", "--aggressive"],
+	"python.terminal.activateEnvironment": false,
+	"python.pythonPath": "/usr/bin/python3",
+	"emmet.includeLanguages": { "jinja-html": "html" },
+	"files.associations": {
+		"**/templates/*.html": "jinja-html"
+	},
+	"python.linting.pylintArgs": ["--load-plugins", "pylint-flask", "pylint-flask-sqlalchemy"],
+	"editor.accessibilitySupport": "off",
+	"editor.codeActionsOnSave": null,
+	"python.languageServer": "Pylance",
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"zenMode.hideTabs": false,
+	"workbench.editor.tabCloseButton": "left",
+	"workbench.editor.showTabs": true,
+	"code-runner.runInTerminal": true,
+	"code-runner.languageIdToFileExtensionMap": {
+		"bat": ".bat",
+		"powershell": ".ps1",
+		"typescript": ".ts"
+	},
+	"code-runner.executorMap": {
+		"python": "python3"
+	},
+	"java.configuration.checkProjectSettingsExclusions": false,
+	"workbench.colorCustomizations": {
+		"editor.selectionBackground": "#66ffff3b"
+	},
+	"material-icon-theme.opacity": 1,
+	"editor.tokenColorCustomizations": {
+		"[Material Theme Ocean]": {
+			"comments": "#d4922f96",
+			"textMateRules": [
+				{
+					"scope": "string.quoted.docstring.multi.python",
+					"settings": {
+						"foreground": "#d4922f96"
+					}
+				}
+			]
+		},
+		"[Material Theme Ocean High Contrast]": {
+			"comments": "#d4922f96",
+			"textMateRules": [
+				{
+					"scope": "string.quoted.docstring.multi.python",
+					"settings": {
+						"foreground": "#d4922f96"
+					}
+				}
+			]
+		}
+	},
+	"workbench.colorTheme": "Material Theme Ocean High Contrast",
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+	"files.autoSaveDelay": 100,
+	"prettier.useTabs": true,
+	"explorer.confirmDelete": false,
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.python"
+	},
+	"editor.tabCompletion": "on",
+	"spellright.configurationScope": "user",
+	"spellright.documentTypes": ["markdown", "latex", "plaintext"],
+	"cSpell.userWords": ["apriori"],
+	"latex-workshop.view.pdf.viewer": "tab",
+	"latex-workshop.latex.autoBuild.run": "never",
+	// Don't enable otherwise it will cause problems with LaTeX workshop viewer
+	//"latex-workshop.latex.outDir": "tmp",
+	"latex-workshop.latex.recipes": [
+		{
+			"name": "latexmk",
+			"tools": ["latexmk", "pdf"]
+		}
+	],
+	"latex-workshop.latex.tools": [
+		{
+			"name": "latexmk",
+			"command": "latexmk",
+			"args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "-pdf", "-outdir=tmp", "%DOC%"],
+			"env": {}
+		},
+		{
+			"name": "pdf",
+			"command": "mv",
+			"args": ["tmp/%DOCFILE%.pdf", "%DOCFILE%.pdf"]
+		},
+		{
+			"name": "pdflatex",
+			"command": "pdflatex",
+			"args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"],
+			"env": {}
+		},
+		{
+			"name": "bibtex",
+			"command": "bibtex",
+			"args": ["%DOCFILE%"],
+			"env": {}
+		}
+	],
+	"tabnine.experimentalAutoImports": true,
+	"discord.detailsIdling": "Procrastinating",
+	"discord.largeImageIdling": "#_#",
+	"discord.lowerDetailsIdling": "Procrastinating",
+	"workbench.startupEditor": "none",
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"explorer.confirmDragAndDrop": false,
+	"python.defaultInterpreterPath": "/usr/bin/python3",
+	"editor.inlineSuggest.enabled": true,
+	"editor.autoClosingBrackets": "always",
+	"bracket-pair-colorizer-2.depreciation-notice": false,
+	"markdown-preview-enhanced.previewTheme": "github-dark.css"
+}
