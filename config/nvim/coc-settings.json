@@ -1,0 +1,7 @@
+{
+    "elixir.pathToElixirLS": "/usr/local/bin/elixir-ls",
+    "java.home": "/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home",
+    "clangd.path": "/usr/bin/clangd",
+    "suggest.maxCompleteItemCount": 10,
+    "python.pythonPath": "python3"
+}

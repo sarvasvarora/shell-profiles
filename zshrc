@@ -74,6 +74,7 @@ plugins=(
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+	zsh-history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -131,3 +132,50 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export PATH="/usr/local/sbin:$PATH"
+
+# Alias for xeyes
+alias xeyes='open -a xeyes'
+
+# Alias to open the last closed VIM buffer
+alias v='vim -c "normal '"'"'0" -c bd1'
+
+# Alias for clear
+alias c='clear'
+
+# Alias for tree
+alias lt='tree -L 1'
+
+# Alias for git status
+alias gs='git status'
+
+# Alias to make ls human radable by default
+alias ls='ls -h'
+
+# Command to check whether two git branches have diverged
+is-ancestor() {
+	if [[ $# -lt 2 ]]; then echo 'Please provide only two git branches'; return 1; fi
+	git merge-base --is-ancestor $1 $2
+	if [[ $? -eq 0 ]]; then
+		echo "$1 is an ancestor of $2 i.e., the branches have not diverged."
+	else
+		echo "$1 is NOT an ancestor of $2 i.e., the branches have diverged."
+	fi
+}
+# export -f is-ancestor
+
+# Fuck vim -> use neovim
+alias vim=nvim
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+alias mailcatcher=/usr/local/lib/ruby/gems/3.1.0/gems/mailcatcher-0.8.2/bin/mailcatcher
+
+export JAVA_HOME=`/usr/libexec/java_home -v 17`
+
+alias activate-virtual-env='source venv/bin/activate'
+
+source ~/.zprofile 
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
+
+
